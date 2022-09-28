@@ -1,0 +1,1 @@
+Contains exercises from Python For Everyone by Dr Charles R. Severance.
