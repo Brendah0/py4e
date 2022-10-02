@@ -17,4 +17,6 @@ for name,amount in word_list.items():
     if maxword is None or amount>=maxvalue:
         maxword=name;
         maxvalue=amount;
-        print(maxword, maxvalue); 
+        #print(maxword, maxvalue);
+        if maxvalue>=3:
+            print(maxword, maxvalue) 
