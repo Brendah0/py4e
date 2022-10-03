@@ -1,4 +1,6 @@
 word=dict();
+emails=dict();
+amount=dict();
 file=input('Enter file name: ');
 try:
     fhand=open(file);
@@ -9,7 +11,23 @@ for  lines in fhand:
     if lines.startswith('From '):
         #print(lines);
         line=lines.split();
-        rline=line[2]
+        date=line[2]
+        word[date]=word.get(date,0)+1;
 
-        word[rline]=word.get(rline,0)+1;
-        print(word);
+        mail=line[1];
+        emails[mail]=emails.get(mail,0)+1;
+
+        mail=mail.split('@');
+        mails=mail[1];
+        amount[mails]=amount.get(mails,0)+1;
+print(word);
+print(emails);
+print(amount);
+
+maxemail=None;
+maxcount=None;
+for mail,count in emails.items():
+    if maxemail is None or count>maxcount:
+        maxemail=mail;
+        maxcount=count;
+print(maxemail, maxcount);
