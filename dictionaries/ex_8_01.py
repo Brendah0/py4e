@@ -20,8 +20,11 @@ for  lines in fhand:
         mail=mail.split('@');
         mails=mail[1];
         amount[mails]=amount.get(mails,0)+1;
+print('**WORD COUNT**');
 print(word);
+print('**EMAIL COUNT**');
 print(emails);
+print('**DOMAIN COUNT**');
 print(amount);
 
 maxemail=None;
@@ -30,4 +33,5 @@ for mail,count in emails.items():
     if maxemail is None or count>maxcount:
         maxemail=mail;
         maxcount=count;
+print('**MAX MAIL COUNT**')
 print(maxemail, maxcount);
