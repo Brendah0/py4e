@@ -4,14 +4,14 @@ file=input('Input file name:');
 
 if file=='na na boo boo':
     print('You have been punk\'d');
-    quit;
+    quit();
 
 
 try:
     fhand=open(file);
 except:
     print('Error! File missing.');
-    quit;
+    quit();
 
 for line in fhand:
     #line=line.upper();

@@ -1,6 +1,3 @@
-from audioop import reverse
-
-
 name=input('Please input file name: ');
 count=dict();
 try:
@@ -29,5 +26,5 @@ for word,amount in list(count.items()):
     if word is None or amount>maxamount:
         maxword=word;
         maxamount=amount;
-        
+
 print(maxamount,maxword);

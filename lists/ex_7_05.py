@@ -4,7 +4,7 @@ try:
   fhand=open(file);
 except:
     print('File not found!');
-    quit;
+    quit();
 
 for line in fhand:    
     line=line.rstrip();

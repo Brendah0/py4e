@@ -19,4 +19,4 @@ for name,amount in word_list.items():
         maxvalue=amount;
         #print(maxword, maxvalue);
         if maxvalue>=3:
-            print(maxword, maxvalue) 
+            print(maxword, maxvalue);

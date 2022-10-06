@@ -6,6 +6,7 @@ try:
     fhand=open(file);
 except:
     print('Invalid file name.');
+    quit();
 for  lines in fhand:
     lines=lines.rstrip()
     if lines.startswith('From '):
