@@ -25,11 +25,11 @@ for line in fhand:
     for word in words:
         #print(word);
         for letter in word:
-            if letter.isalpha:
+            if (letter in alphabet):
                 #print(letter);
                 count[letter]=count.get(letter,0)+1;
 
-#print(count)
+print(count)
 
 for k,v in list(count.items()):
     freq.append((v,k));
